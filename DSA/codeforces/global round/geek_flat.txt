@@ -1,0 +1,64 @@
+Left linear grammer
+In a grammer if all productions are in the form A->Ba or A->a , where A,B are non-terminal symbols and a is a terminal symbol.
+Example- A->Aa|Bb|b
+
+Right linear grammer
+In a grammer if all the productions are in the form A->aA or A->a, where A,B are non-terminal symbols and 'a' is terminal symbol.
+Example- A->aA|bB|b
+
+Conversion of left linear grammer to right linear grammer:
+
+1. Find reverse of Context free grammer
+2. Create Finite automata of grammer from step one
+3. Then take reverse of the Finite Automata and that will be our final output
+4. Start State: It will be the first production's state
+5. Final State: consider those states which end up with input alphabets. 
+
+6. Write the production as the output followed by the state on which the transition is going
+7. At the last add ε because that's is required to end the derivation
+
+The given grammer	A -> Ba/Ab/b    
+					B -> Ca/Bb
+					C -> Aa/Cb
+
+
+Step 1:		A -> aB/bA/b
+			B -> aC/bB
+			C -> aA/bC/a
+Step 2:   flat1 yha
+
+Step 3:		flat2 yha
+
+Step 4: Given step(4 and 5) show only the intial and final states.
+
+Step 6: A->bA/aC
+		B-> bB/aA
+		C-> aB/aC
+
+Step 7:ADD epsilon to the last step at C
+		 A->bA/aC
+		B-> bB/aA
+		C-> aB/aC/
+
+(2) Conversion of right linear grammer to left linear:
+
+1. Start from the first production
+2. then for every left alphabet go to symbol followed by it
+3. Start State: The first production's state
+4. Final State: Those states which end with a terminal symbol
+5. Take reverse of the finite automata
+6. Then write right linear grammar  by putting the terminal symbol in right of every production
+7. Then take reverse of the right linear grammar
+8. you will get the final left linear grammar
+
+
+The given grammer: A -> aB/bA/b
+				   B -> aC/bB
+			       C -> aA/bC/a
+
+In Step 1 and Step 2 we draw the diagram flat1.png
+
+Step 3 and 4 describes the initial and final states.
+ 
+
+

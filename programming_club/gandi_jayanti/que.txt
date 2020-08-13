@@ -1,0 +1,4 @@
+Lets go back to the past and design an algorithm for the fight to find the winning percentage of our freedom fighters.
+
+There are N freedom fighters going on the war with the english army.The english army have weapons and one single civilian cannot defeat them, as they have more power.The shoulders will fight in pairs .Before the war begins one of the leader of freedom fighter wants to find out that how much wins there freedom fighters will gain.The condition for the win is simple the collective power of the shoulders must be power of 2.Shoulders will make pairs in such a way that after defeating any single english army they can make there pair with some other freedom fighter to defeat anyother army.Your task is to find such unique pairs of freedom fighters.
+

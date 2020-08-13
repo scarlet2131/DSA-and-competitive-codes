@@ -1,0 +1,12 @@
+1) leap year
+
+2)
+
+10 18 -2 12 6 -1 25 9
+a[i]+a[j]=k
+k=9
+
+3)
+
+For finding set bits...
+__builtin_popcount (n);
